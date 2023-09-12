@@ -30,7 +30,7 @@ export default function PostalLookupPage() {
 
         <section>
           <p className="text-gray-400 mb-10">
-            Try "65899", "73001" or "10004" for a few famous locations
+            Try "73001" or "10004" for a few famous locations
           </p>
           <FormControl>
             <div className="flex justify-center gap-4">
