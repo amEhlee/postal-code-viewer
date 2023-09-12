@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    /*TODO cleanup this crap*/
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  h2 {
+    font-size: clamp(30px, 8vw, 50px);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  h3,
+  h3 {
+    @apply text-xl;
+  }
+  body {
+    @apply h-screen m-0 min-w-[400px] font-poppins bg-slate-500 overflow-hidden;
+  }
+  section {
+    @apply relative flex flex-col min-h-[60vh] py-24 p-[30vw] items-center;
+  }
+
+  a {
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #93c5fd;
+  }
+
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.644);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.753);
+}
