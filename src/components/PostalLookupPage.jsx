@@ -25,25 +25,28 @@ export default function PostalLookupPage() {
   return (
     <div className="flex flex-col items-center mt-20 mx-8 text-center p-4">
       <Card className="flex flex-col gap-4 mx-4 p-4  ">
-        <h1 className="my-8 mx-4">Postal Code Lookup</h1>
-        <div>
-          <h3>Warning this may only work with US postal codes</h3>
-          <p>Try "65899", "73001" or "10004" for a few famous locations</p>
-        </div>
-        <FormControl>
-          <div className="flex justify-center gap-4">
-            <TextField
-              label="Postal Code"
-              onChange={(e) => {
-                setPostalCode(e.target.value);
-              }}
-            />
+        <h1 className="mx-4">Postal Code Lookup</h1>
+        <h3>Enter a Postal Code Below!</h3>
 
-            <Button onClick={handlePostalLookup} variant="outlined">
-              Search
-            </Button>
-          </div>
-        </FormControl>
+        <section>
+          <p className="text-gray-400 mb-10">
+            Try "65899", "73001" or "10004" for a few famous locations
+          </p>
+          <FormControl>
+            <div className="flex justify-center gap-4">
+              <TextField
+                label="Postal Code"
+                onChange={(e) => {
+                  setPostalCode(e.target.value);
+                }}
+              />
+
+              <Button onClick={handlePostalLookup} variant="outlined">
+                Search
+              </Button>
+            </div>
+          </FormControl>
+        </section>
       </Card>
 
       {data.length !== 0 ? (

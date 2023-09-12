@@ -5,12 +5,12 @@
 @layer base {
   h1 {
     /*TODO cleanup this crap*/
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 2vw, 80px);
     font-weight: 800;
     white-space: nowrap;
   }
   h2 {
-    font-size: clamp(30px, 8vw, 50px);
+    font-size: clamp(30px, 1vw, 50px);
     font-weight: 800;
     white-space: nowrap;
   }
@@ -21,10 +21,7 @@
   body {
     @apply h-screen m-0 min-w-[400px] font-poppins bg-slate-500 overflow-hidden;
   }
-  section {
-    @apply relative flex flex-col min-h-[60vh] py-24 p-[30vw] items-center;
-  }
-
+  
   a {
     transition: 0.3s;
   }
