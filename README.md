@@ -1,13 +1,13 @@
-## University Lookup
+## Postal Code Viewer
 
 ## Details ✍🏾
-App used to search up universities in any given region. This is not just limited to Canada or the US and can search
-anywhere across the world! 
+App used to search up postal codes all across the United States. If a location is found it was display the relevant state and associated latitude and longitude. 
 
-![image](https://github.com/amEhlee/postal-code-viewer/assets/76502588/f1abe3dc-b4d9-448a-a3b5-274defef56ce)
+![image](https://github.com/amEhlee/postal-code-viewer/assets/76502588/55af4d2a-5bdd-4499-88d3-796976457aa1)
 
 ## Getting Started 🚀
-First, run the development server:
+First start off by installing the needed files using ```npm install``` finished up by starting the development server using 
+any of the methods below.
 
 ```bash
 npm run dev
